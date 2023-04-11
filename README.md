@@ -1,2 +1,0 @@
-# data-nba
-Repositorio nba
