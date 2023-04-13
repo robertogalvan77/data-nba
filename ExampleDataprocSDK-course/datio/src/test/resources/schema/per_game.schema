@@ -1,0 +1,252 @@
+{
+  "namespace": "nba_player_pergame",
+  "name": "t_player_pergame",
+  "doc": "Tabla que contiene el historico de puntos por jugador en cada juego",
+  "database": "master",
+  "storageZone": "MASTERDATA",
+  "storageType": "HDFS-Parquet",
+  "physicalPath": "/data/master/fdev/data/t_fdev_players",
+  "securityLevel": "L1",
+  "type": "record",
+  "fields": [{
+    "name": "Rk",
+    "type": "int32",
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": 0
+  }, {
+    "name": "Player",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(30)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "Pos",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }, {
+    "name": "Age",
+    "type": "int32",
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": 0
+  }, {
+    "name": "Tm",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(5)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  },{
+    "name": "G",
+    "type": "int32",
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": 0
+  },{
+    "name": "GS",
+    "type": "int32",
+    "logicalFormat": "NUMERIC SHORT",
+    "deleted": false,
+    "metadata": false,
+    "default": 0
+  },{
+    "name": "MP",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "8,1"
+  },{
+    "name": "FG",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "FGA",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "FG%",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "3P",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "3PA",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "3PA%",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "2P",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "2PA",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "2P%",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "eFG%",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "FT",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "FTA",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "FT%",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "ORB",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "DRB",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "TRB",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "AST",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "STL",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "BLK",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "TOV",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "PF",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "PTS",
+    "type": ["null", "double"],
+    "logicalFormat": "DOUBLE",
+    "deleted": false,
+    "metadata": false,
+    "default": null,
+    "format": "7,1"
+  },{
+    "name": "Player-additional",
+    "type": "string",
+    "logicalFormat": "ALPHANUMERIC(20)",
+    "deleted": false,
+    "metadata": false,
+    "default": ""
+  }]
+}
